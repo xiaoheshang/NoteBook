@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cn.hneao.notebook.widget.ScrollViewWithPinnedView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/pinned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="pinned view here" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="awesome" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pinned view here" />
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_button_n"
+            android:layout_gravity="center_horizontal"/>
+        
+    </LinearLayout>
+</cn.hneao.notebook.widget.ScrollViewWithPinnedView>

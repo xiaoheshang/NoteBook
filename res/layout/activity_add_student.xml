@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/add_student_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/review_bg_blue"
+            android:padding="5.0dip" >
+
+            <ProgressBar style="@style/loading_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="@string/addstudent_str"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <View
+            android:id="@+id/v_header_separator"
+            style="@style/HeaderSeparator"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/v_header_separator" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp" >
+
+                <CheckBox
+                    android:id="@+id/add_to_star"
+                    style="@style/SubtitleText"
+                    android:layout_gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="@string/add_to_star"
+                    android:textColor="@color/text" />
+
+                <View style="@style/Separator" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        style="@style/HeaderTitleText"
+                        android:text="@string/ksh_str" />
+
+                    <EditText
+                        android:id="@+id/ksh"
+                        style="@style/FormalSingleLineEditText"
+                        android:layout_width="match_parent"
+                        android:hint="@string/ksh_hint" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        style="@style/HeaderTitleText"
+                        android:paddingTop="15dp"
+                        android:text="@string/lxdh_str" />
+
+                    <EditText
+                        android:id="@+id/lxdh"
+                        style="@style/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lxdh_hint"
+                        android:singleLine="true" />
+
+                    <TextView
+                        style="@style/HeaderTitleText"
+                        android:paddingTop="15dp"
+                        android:text="@string/bz_str" />
+
+                    <EditText
+                        android:id="@+id/bz"
+                        style="@style/EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:hint="@string/bz_hint"
+                        android:inputType="textMultiLine|textAutoComplete"
+                        android:minLines="5"
+                        android:padding="10dp"
+                        android:scrollbars="horizontal|vertical"
+                        android:typeface="monospace" >
+                    </EditText>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/auto_send_message"
+                    style="@style/SubtitleText"
+                    android:layout_gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/auto_send_message"
+                    android:textColor="@color/text" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_xm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mt_xm" />
+
+        <Button
+            android:id="@+id/btn_yxmc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mt_yxmc" />
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mt_time" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_mbnr"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

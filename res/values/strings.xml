@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">录取记事本</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="action_search">查询考生信息</string>
+    <string name="action_add">添加考生</string>
+    <string name="title_activity_search">搜索结果</string>
+    <string name="app_label">录取记事本</string>
+    <string name="search_hint">考生号\姓名\身份证号</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_send_message">发送信息</string>
+    <string name="title_activity_add_student">添加考生</string>
+    <string name="action_save">保存</string>
+    <string name="add_to_star">添加到关注</string>
+    <string name="ksh_str">考生号</string>
+    <string name="ksh_hint">请输入10位考生号</string>
+    <string name="lxdh_str">联系电话</string>
+    <string name="lxdh_hint">请输入手机号码</string>
+    <string name="bz_str">备注信息</string>
+    <string name="bz_hint">例：高职专科批</string>
+    <string name="auto_send_message">自动发送短信息</string>
+    <string name="title_activity_login">系统登录</string>
+    <string name="username_str">用户名</string>
+    <string name="password_str">密码</string>
+    <string name="remember_me_str">下次自动登录</string>
+    <string name="btn_login_str">登录</string>
+    <string name="msg_login_null">请输入用户名</string>
+    <string name="msg_pwd_null">请输入登录密码</string>
+    <string name="msg_login_error">用户未登录 或 密码错误</string>
+    <string name="welcome_str">这是一个欢迎页</string>
+    <string name="title_activity_set">系统设置</string>
+    <string name="dialog_loginout">确定注销登录？</string>
+    <string name="dialog_info">提示</string>
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="title_activity_user_info">用户信息</string>
+    <string name="action_refresh">刷新</string>
+    <string name="title_activity_message_template_set">短信模板设置</string>
+    <string name="action_savetemplate">保存模板</string>
+    <string name="mt_xm">姓名</string>
+    <string name="mt_yxmc">院校名称</string>
+    <string name="mt_time">时间</string>
+    <string name="title_activity_about">软件说明</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_section1">未录取</string>
+    <string name="title_section2">已录取</string>
+    <string name="title_section3">关注</string>
+    <string name="load_ing">加载中···</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+    <string name="addstudent_str">正在添加考生...</string>
+    <string name="title_activity_student_detail">StudentDetailActivity</string>
+
+</resources>

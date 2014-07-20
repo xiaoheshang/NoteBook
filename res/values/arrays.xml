@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="books">
+            <item >列表内容一</item>
+            <item >列表内容二</item>
+            <item >列表内容三</item>
+        </string-array>
+        <string-array name="list_nav">
+            <item>未录取</item>
+            <item>已录取</item>
+            <item>已关注</item>
+        </string-array>
+    </resources>

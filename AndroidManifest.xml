@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.hneao.notebook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="cn.hneao.notebook.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_hneao"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.hneao.notebook.AppStart"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="cn.hneao.notebook.ui.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.AddStudentActivity"
+            android:label="@string/title_activity_add_student"
+            android:parentActivityName="cn.hneao.notebook.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.hneao.notebook.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.SetActivity"
+            android:label="@string/title_activity_set"
+            android:parentActivityName="cn.hneao.notebook.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.hneao.notebook.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.UserInfoActivity"
+            android:label="@string/title_activity_user_info"
+            android:parentActivityName="cn.hneao.notebook.ui.SetActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.hneao.notebook.ui.SetActivity" />
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.MessageTemplateSetActivity"
+            android:label="@string/title_activity_message_template_set"
+            android:parentActivityName="cn.hneao.notebook.ui.SetActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.hneao.notebook.ui.SetActivity" />
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="cn.hneao.notebook.ui.SetActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.hneao.notebook.ui.SetActivity" />
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.TabActivity"
+            android:label="@string/title_activity_tab" >
+        </activity>
+        <activity
+            android:name="cn.hneao.notebook.ui.StudentDetailActivity"
+            android:label="@string/title_activity_student_detail"
+            android:parentActivityName="cn.hneao.notebook.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cn.hneao.notebook.ui.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
